@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sn.gravenilvec.samashop">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/shop"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".achat.AchatEffectueActivity"></activity>
+        <activity
+            android:name=".achat.ModifierAchatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".achat.FormulaireAchatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".achat.ListAchatActivity" />
+        <activity
+            android:name=".panier.ModificationPanierActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".panier.FormulairePanierActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".panier.ListePanierActivity" />
+        <activity
+            android:name=".auth.Inscription"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".auth.LoginActivity" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".ChargementActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>
